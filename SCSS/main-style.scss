@@ -1,0 +1,43 @@
+@import "../SCSS/reset"; // обнулення стилів
+
+// Підключення шрифтів
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+// Контейнер та кнопки
+@import "../SCSS/blocks/container";
+@import "../SCSS/buttons";
+
+// HEADER
+@import "../SCSS/blocks/header/_header.scss";
+@import "../SCSS/blocks/header/_nav.scss";
+@import "../SCSS/blocks/header/_nav-list.scss";
+@import "../SCSS/blocks/header/_user.scss";
+@import "../SCSS/blocks/header/_mobile-nav-btn.scss";
+@import "../SCSS/blocks/header/_form.scss";
+@import "../SCSS/blocks/header/_mobile-nav-fade.scss";
+@import "../SCSS/blocks/header/_mobile-nav.scss";
+
+// MAIN
+@import "../SCSS/blocks/main/_main.scss";
+@import "../SCSS/blocks/main/_section.scss";
+@import "../SCSS/blocks/main/_card.scss";
+@import "../SCSS/blocks/main/_about-us.scss";
+
+// FOOTER
+@import "../SCSS/blocks/footer/_footer.scss";
+@import "../SCSS/blocks/footer/_subscribe.scss";
+
+// MEDIA REQUESTS
+@import "../SCSS/_media.scss";
+
+.none {
+    display: none;
+}

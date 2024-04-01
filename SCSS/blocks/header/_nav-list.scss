@@ -1,0 +1,31 @@
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+
+    font-weight: 300;
+
+    &__item {
+        margin: 0 27px;
+        transition: 0.5s;
+    }
+
+    &__link {
+        color:#fff;
+        opacity: 0.5;
+        
+        &_active {
+            opacity: 1;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &_none {
+        display: none !important;
+    }
+}

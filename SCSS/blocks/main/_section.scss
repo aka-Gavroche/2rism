@@ -1,0 +1,32 @@
+.section {
+    &__header {
+        margin-bottom: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 3rem;
+        color: #161414;
+    }
+
+    &__cards {
+        display: grid;
+        gap: 32px;
+
+        &_six-in-row {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        &_four-in-row {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &_two-in-row {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.user {
+    display: flex;
+    align-items: stretch;
+    column-gap: 8px;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+
+    &__content {
+        text-align: right;
+    }
+
+    &__greeting {
+        opacity: 0.5;
+        text-transform: capitalize;
+    }
+
+    &__name {
+        font-weight: 600;
+    }
+
+    &__avatar {
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            right: 0;
+            
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ff0000;
+        }
+    }
+
+    &__img {
+        display: block;
+        border-radius: 50%;
+       
+    }
+}

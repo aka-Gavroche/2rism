@@ -1,0 +1,43 @@
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    z-index: 99;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    padding: 40px 40px;
+
+    background-color: #141d22;
+    transition: all 0.3s ease-in;
+
+    &__list {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    &__link {
+        color:#fff;
+        opacity: 0.5;
+        
+        &_active {
+            opacity: 1;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &_open {
+        right: 0;
+    }
+}
